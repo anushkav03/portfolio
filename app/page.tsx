@@ -1,7 +1,12 @@
-import Image from "next/image";
+import { Button, HStack } from "@chakra-ui/react"
 
-export default function() {
-  return <p>Hello world</p>;
+export default function Home() {
+  return (
+  <HStack>
+  <Button>Click me</Button>
+  <Button>FUCK YEAH</Button>
+  </HStack>
+  );
 }
 
 // export default function Home() {
