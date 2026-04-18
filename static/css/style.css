@@ -1,0 +1,96 @@
+/* Earthy Palette 
+   Parchment: #F2EDE4
+   Moss Green: #4A5D4E
+   Deep Soil:  #3E362E
+   Clay/Rust:  #A67B5B
+   Fern:       #839973
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2EDE4;
+    font-family: 'Crimson Text', serif;
+    color: #3E362E;
+}
+
+.navbar {
+    background-color: #4A5D4E; /* Deep Moss */
+    padding: 1.2rem;
+    border-bottom: 4px solid #3E362E;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F2EDE4;
+    margin: 0 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 150px;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #A67B5B; /* Clay Brown */
+    object-fit: cover;
+    filter: sepia(20%); /* Adds a vintage touch */
+}
+
+.social-links a {
+    display: block;
+    margin-top: 15px;
+    color: #4A5D4E;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed #A67B5B;
+}
+
+/* About Me Section */
+.card {
+    background: #FCFAf7;
+    padding: 40px;
+    border: 2px solid #D2C7B7;
+    box-shadow: 12px 12px 0px #839973; /* Fern green shadow */
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #A67B5B;
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Mini-Game Placeholder */
+.game-zone {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.game-placeholder {
+    width: 180px;
+    height: 120px;
+    border: 2px solid #839973;
+    background-color: #E8F0E5;
+    color: #4A5D4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
