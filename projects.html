@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Portfolio{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
         </div>
     </nav>
 
-    {% block content %}
-    {% endblock %}
+    <main style="max-width: 1100px; margin: 50px auto; padding: 20px;">
+    <h1>My Projects</h1>
+    <div class="card">
+        <h3>Stay tuned...</h3>
+        <p>Coming soon.</p>
+    </div>
+    </main>
 
 </body>
 </html>
