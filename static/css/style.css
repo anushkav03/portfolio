@@ -26,6 +26,14 @@ body {
     margin: 0 20px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
+    transition: color 180ms ease, transform 180ms ease, text-shadow 180ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #FCFAF7;
+    text-shadow: 0 0 8px rgba(242, 237, 228, 0.8);
+    transform: translateY(-1px);
 }
 
 .grid-container {
@@ -54,7 +62,15 @@ body {
     color: #4A5D4E;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 1px dashed #A67B5B;
+    transition: color 180ms ease, border-color 180ms ease, shadow 180ms ease, transform 180ms ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    color: #3E362E;
+    border-color: #4A5D4E;
+    box-shadow: 0 6px 16px rgba(62, 54, 46, 0.14);
+    transform: translateX(2px);
 }
 
 /* About Me Section */
@@ -73,6 +89,15 @@ body {
     color: white;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
+    border-radius: 8px;
+    transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.resume-link:hover,
+.resume-link:focus-visible {
+    background-color: #8e624f;
+    box-shadow: 0 10px 22px rgba(166, 123, 91, 0.24);
+    transform: translateY(-1px);
 }
 
 /* Mini-Game Placeholder */

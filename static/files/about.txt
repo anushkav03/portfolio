@@ -1,0 +1,14 @@
+I’m a builder driven by curiosity and the challenge of turning 
+raw data into meaningful narratives. My approach to engineering 
+is cross-disciplinary: I’m just as comfortable diving into 
+logical puzzles and backend architecture as I am communicating 
+with diverse stakeholders to solve real-world problems. 
+
+<br>
+<br>
+
+Whether I’m designing inventive, 'cute' micro-interactions or 
+building robust tools for healthcare and clean energy, I focus on 
+creating technology with a purpose. I believe the best solutions 
+live at the intersection of rigorous data analysis, creative 
+ideation, and public-minded impact.
