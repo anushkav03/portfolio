@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <script src="static/js/audio-control.js" defer></script>
 </head>
 <body>
+    <audio id="global-audio" preload="auto"></audio>
+    <div id="bridge-audio"></div>
 
     <nav class="navbar">
         <div class="nav-links">
@@ -45,7 +48,29 @@
     </section>
 
     <section class="game-zone">
-        <div class="game-placeholder">Game Coming Soon</div>
+        <div id="popup-swap" class="game-placeholder">
+            <button 
+                class="btn play-music"
+                hx-post="http://127.0.0.1:8000/play"
+                hx-trigger="click"
+                hx-target="#bridge-audio"> Play
+            </button>
+
+            <button 
+                class="btn play-music"
+                hx-post="http://127.0.0.1:8000/pause"
+                hx-trigger="click"
+                hx-target="#bridge-audio"> Pause
+            </button>
+
+            <button 
+                class="btn open-popup"
+                hx-post="http://127.0.0.1:8000/open-popup"
+                hx-trigger="click"
+                hx-target="#popup-swap"
+                hx-swap="beforeend"> Open Popup
+            </button>
+        </div>
     </section>
     </main>
 
